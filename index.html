@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev | Portfolio Profissional</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">PORT<span>FOLIO</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#atividades">Projetos</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="profile-main">
+            <img src="imagens/eu.png" alt="Sua Foto">
+        </div>
+        <h1>Olá, eu sou <span class="highlight">Seu Nome</span></h1>
+        <h2 id="typewriter"></h2>
+        <div class="hero-buttons">
+            <a href="#atividades" class="btn-primary">Ver Portfólio</a>
+            <a href="https://github.com/Golden-Sirvices" target="_blank" class="btn-secondary"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+    </section>
+
+    <section id="atividades" class="container">
+        <h2 class="section-title">Minhas <span class="highlight">Atividades</span></h2>
+
+        <div class="project-showcase">
+            <div class="project-visual">
+                <h3>Apresentação Mobile</h3>
+                <div class="slider-container">
+                    <button class="slider-arrow" onclick="mudarSlide('atv1', -1)"><i class="fas fa-chevron-left"></i></button>
+                    <div class="slider-frame" id="slider-atv1">
+                        <img src="imagens/Apre.png" alt="Atv 1 - 1" class="slide-atv1 active">
+                        <img src="assets/atv1-print2.png" alt="Atv 1 - 2" class="slide-atv1">
+                    </div>
+                    <button class="slider-arrow" onclick="mudarSlide('atv1', 1)"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+            <div class="project-info">
+                <div class="info-block">
+                    <h3 class="blue-title">Sobre o projeto</h3>
+                    <p>Aplicativo web focado em apresentação pessoal mobile, destacando Soft e Hard Skills com interface intuitiva e design limpo.</p>
+                </div>
+                <div class="info-grid">
+                    <div class="info-block">
+                        <h3 class="blue-title">Conceitos</h3>
+                        <ul class="check-list">
+                            <li>Mobile First;</li>
+                            <li>Hierarquia Visual;</li>
+                            <li>UX/UI Design.</li>
+                        </ul>
+                    </div>
+                    <div class="info-block">
+                        <h3 class="blue-title">Tecnologias</h3>
+                        <ul class="dot-list">
+                            <li>HTML5 / CSS3;</li>
+                            <li>JavaScript;</li>
+                            <li>Google Fonts.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-showcase">
+            <div class="project-visual">
+                <h3>RPG Card</h3>
+                <div class="slider-container">
+                    <button class="slider-arrow" onclick="mudarSlide('atv2', -1)"><i class="fas fa-chevron-left"></i></button>
+                    <div class="slider-frame" id="slider-atv2">
+                        <img src="imagens/hori.png" alt="Atv 2 - 1" class="slide-atv2 active">
+                        <img src="imagens/verti.png" alt="Atv 2 - 2" class="slide-atv2">
+                    </div>
+                    <button class="slider-arrow" onclick="mudarSlide('atv2', 1)"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+            <div class="project-info">
+                <div class="info-block">
+                    <h3 class="blue-title">Sobre o projeto</h3>
+                    <p>Desenvolvimento de cards de personagens com atributos dinâmicos, explorando a alternância entre modo retrato e paisagem.</p>
+                </div>
+                <div class="info-grid">
+                    <div class="info-block">
+                        <h3 class="blue-title">Conceitos</h3>
+                        <ul class="check-list">
+                            <li>Flex-direction (Row/Col);</li>
+                            <li>Estilização Condicional;</li>
+                            <li>Responsive Design.</li>
+                        </ul>
+                    </div>
+                    <div class="info-block">
+                        <h3 class="blue-title">Tecnologias</h3>
+                        <ul class="dot-list">
+                            <li>React Native;</li>
+                            <li>StyleSheet;</li>
+                            <li>Expo Screen Orientation.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-showcase">
+            <div class="project-visual">
+                <h3>App de Filmes</h3>
+                <div class="slider-container">
+                    <button class="slider-arrow" onclick="mudarSlide('atv3', -1)"><i class="fas fa-chevron-left"></i></button>
+                    <div class="slider-frame" id="slider-atv3">
+                        <img src="imagens/cine.png" alt="Atv 3 - 1" class="slide-atv3 active">
+                        <img src="imagens/king.png" alt="Atv 3 - 2" class="slide-atv3">
+                    </div>
+                    <button class="slider-arrow" onclick="mudarSlide('atv3', 1)"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+            <div class="project-info">
+                <div class="info-block">
+                    <h3 class="blue-title">Sobre o projeto</h3>
+                    <p>Simulador de catálogo de cinema com navegação completa, permitindo selecionar filmes e ver detalhes em uma nova tela.</p>
+                </div>
+                <div class="info-grid">
+                    <div class="info-block">
+                        <h3 class="blue-title">Conceitos</h3>
+                        <ul class="check-list">
+                            <li>Navegação entre telas;</li>
+                            <li>Passagem de parâmetros;</li>
+                            <li>Componentização.</li>
+                        </ul>
+                    </div>
+                    <div class="info-block">
+                        <h3 class="blue-title">Tecnologias</h3>
+                        <ul class="dot-list">
+                            <li>Expo React Native;</li>
+                            <li>React Navigation;</li>
+                            <li>Stack Navigator.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
