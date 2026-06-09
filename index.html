@@ -3,150 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dev | Portfolio Profissional</title>
+    <title>Vitor Chaves — Dev Mobile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
     <nav class="navbar">
-        <div class="logo">PORT<span>FOLIO</span></div>
+        <div class="logo"><span class="lb">&lt;</span>VC<span class="lb">/&gt;</span></div>
         <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#atividades">Projetos</a></li>
+            <li><a href="#home">início</a></li>
+            <li><a href="#sobre">sobre</a></li>
+            <li><a href="#projetos">projetos</a></li>
         </ul>
+        <div class="nav-status"><span class="sdot"></span>disponível</div>
     </nav>
 
+    <!-- HERO -->
     <section id="home" class="hero">
-        <div class="profile-main">
-            <img src="imagens/eu.png" alt="Sua Foto">
+        <div class="hero-grid"></div>
+        <div class="hero-content">
+            <div class="hero-tag">// desenvolvedor mobile</div>
+            <h1 class="hero-name">Vitor<br><span>Chaves</span></h1>
+            <p class="hero-sub" id="typewriter"></p>
+            <div class="hero-cta">
+                <a href="#projetos" class="btn-p">ver projetos <i class="fas fa-arrow-down"></i></a>
+                <a href="https://github.com/Golden-Sirvices" target="_blank" class="btn-g"><i class="fab fa-github"></i> github</a>
+            </div>
         </div>
-        <h1>Olá, eu sou <span class="highlight">Vitor da Costa Chaves</span></h1>
-        <h2 id="typewriter"></h2>
-        <div class="hero-buttons">
-            <a href="#atividades" class="btn-primary">Ver Portfólio</a>
-            <a href="https://github.com/Golden-Sirvices" target="_blank" class="btn-secondary"><i class="fab fa-github"></i> GitHub</a>
+        <div class="hero-visual">
+            <div class="photo-frame">
+                <img src="imagens/eu.png" alt="Vitor Chaves">
+                <div class="photo-ring"></div>
+            </div>
+        </div>
+        <div class="scroll-hint"><span>scroll</span><div class="scroll-line"></div></div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="sobre">
+        <div class="sobre-inner">
+            <div class="sobre-left">
+                <div class="eyebrow">01 — sobre mim</div>
+                <h2 class="sec-title">Construindo<br>experiências <em>mobile</em></h2>
+                <p class="bio">Sou estudante de Desenvolvimento de Sistemas (turma 2026), apaixonado por criar interfaces mobile que combinam funcionalidade e estética. Meu foco está em React Native, mas adoro entender como as coisas funcionam do front ao back.</p>
+                <p class="bio">Cada projeto é uma oportunidade de aplicar conceitos novos e empurrar um pouco mais os limites do que consigo construir.</p>
+                <div class="sobre-links">
+                    <a href="https://github.com/Golden-Sirvices" target="_blank" class="social-pill"><i class="fab fa-github"></i> Golden-Sirvices</a>
+                </div>
+            </div>
+            <div class="sobre-right">
+                <div class="code-panel">
+                    <div class="code-header">
+                        <span class="cdot" style="background:#ff5f56"></span>
+                        <span class="cdot" style="background:#ffbd2e"></span>
+                        <span class="cdot" style="background:#27c93f"></span>
+                        <span class="code-fname">skills.json</span>
+                    </div>
+                    <div class="code-body">
+<pre class="scode"><span class="sb">{</span>
+  <span class="sk">"mobile"</span>: <span class="sb">[</span>
+    <span class="ss">"React Native"</span>, <span class="ss">"Expo"</span>,
+    <span class="ss">"React Navigation"</span>,
+    <span class="ss">"React Native Paper"</span>
+  <span class="sb">]</span>,
+  <span class="sk">"web"</span>: <span class="sb">[</span>
+    <span class="ss">"HTML5"</span>, <span class="ss">"CSS3"</span>,
+    <span class="ss">"JavaScript"</span>
+  <span class="sb">]</span>,
+  <span class="sk">"conceitos"</span>: <span class="sb">[</span>
+    <span class="ss">"Mobile First"</span>,
+    <span class="ss">"UX/UI Design"</span>,
+    <span class="ss">"Componentização"</span>,
+    <span class="ss">"Stack & Tab Navigator"</span>
+  <span class="sb">]</span>,
+  <span class="sk">"status"</span>: <span class="ss">"aprendendo sempre"</span>
+<span class="sb">}</span></pre>
+                    </div>
+                </div>
+                <div class="stats-row">
+                    <div class="stat"><span class="sn">5</span><span class="sl">projetos</span></div>
+                    <div class="stat"><span class="sn">2026</span><span class="sl">turma</span></div>
+                    <div class="stat"><span class="sn">∞</span><span class="sl">curiosidade</span></div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="atividades" class="container">
-        <h2 class="section-title">Minhas <span class="highlight">Atividades</span></h2>
+    <!-- PROJETOS -->
+    <section id="projetos" class="projetos">
+        <div class="proj-inner">
+            <div class="eyebrow">02 — projetos</div>
+            <h2 class="sec-title">O que eu <em>construí</em></h2>
 
-        <div class="project-showcase">
-            <div class="project-visual">
-                <h3>Apresentação Mobile</h3>
-                <div class="slider-container">
-                    <button class="slider-arrow" onclick="mudarSlide('atv1', -1)"><i class="fas fa-chevron-left"></i></button>
-                    <div class="slider-frame" id="slider-atv1">
-                        <img src="imagens/Apre.png" alt="Atv 1 - 1" class="slide-atv1 active">
-                        <img src="assets/atv1-print2.png" alt="Atv 1 - 2" class="slide-atv1">
-                    </div>
-                    <button class="slider-arrow" onclick="mudarSlide('atv1', 1)"><i class="fas fa-chevron-right"></i></button>
-                </div>
+            <div class="tabs">
+                <button class="tab active" data-tab="cards"><i class="fas fa-th-large"></i> cards</button>
+                <button class="tab" data-tab="timeline"><i class="fas fa-stream"></i> timeline</button>
             </div>
-            <div class="project-info">
-                <div class="info-block">
-                    <h3 class="blue-title">Sobre o projeto</h3>
-                    <p>Aplicativo web focado em apresentação pessoal mobile, destacando Soft e Hard Skills com interface intuitiva e design limpo.</p>
-                </div>
-                <div class="info-grid">
-                    <div class="info-block">
-                        <h3 class="blue-title">Conceitos</h3>
-                        <ul class="check-list">
-                            <li>Mobile First;</li>
-                            <li>Hierarquia Visual;</li>
-                            <li>UX/UI Design.</li>
-                        </ul>
-                    </div>
-                    <div class="info-block">
-                        <h3 class="blue-title">Tecnologias</h3>
-                        <ul class="dot-list">
-                            <li>HTML5 / CSS3;</li>
-                            <li>JavaScript;</li>
-                            <li>Google Fonts.</li>
-                        </ul>
-                    </div>
-                </div>
+
+            <!-- CARDS -->
+            <div id="view-cards" class="pview active">
+                <div class="pgrid" id="project-cards"></div>
+            </div>
+
+            <!-- TIMELINE -->
+            <div id="view-timeline" class="pview">
+                <div class="timeline" id="project-timeline"></div>
             </div>
         </div>
-
-        <div class="project-showcase">
-            <div class="project-visual">
-                <h3>RPG Card</h3>
-                <div class="slider-container">
-                    <button class="slider-arrow" onclick="mudarSlide('atv2', -1)"><i class="fas fa-chevron-left"></i></button>
-                    <div class="slider-frame" id="slider-atv2">
-                        <img src="imagens/hori.png" alt="Atv 2 - 1" class="slide-atv2 active">
-                        <img src="imagens/verti.png" alt="Atv 2 - 2" class="slide-atv2">
-                    </div>
-                    <button class="slider-arrow" onclick="mudarSlide('atv2', 1)"><i class="fas fa-chevron-right"></i></button>
-                </div>
-            </div>
-            <div class="project-info">
-                <div class="info-block">
-                    <h3 class="blue-title">Sobre o projeto</h3>
-                    <p>Desenvolvimento de cards de personagens com atributos dinâmicos, explorando a alternância entre modo retrato e paisagem.</p>
-                </div>
-                <div class="info-grid">
-                    <div class="info-block">
-                        <h3 class="blue-title">Conceitos</h3>
-                        <ul class="check-list">
-                            <li>Flex-direction (Row/Col);</li>
-                            <li>Estilização Condicional;</li>
-                            <li>Responsive Design.</li>
-                        </ul>
-                    </div>
-                    <div class="info-block">
-                        <h3 class="blue-title">Tecnologias</h3>
-                        <ul class="dot-list">
-                            <li>React Native;</li>
-                            <li>StyleSheet;</li>
-                            <li>Expo Screen Orientation.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="project-showcase">
-            <div class="project-visual">
-                <h3>App de Filmes</h3>
-                <div class="slider-container">
-                    <button class="slider-arrow" onclick="mudarSlide('atv3', -1)"><i class="fas fa-chevron-left"></i></button>
-                    <div class="slider-frame" id="slider-atv3">
-                        <img src="imagens/cine.png" alt="Atv 3 - 1" class="slide-atv3 active">
-                        <img src="imagens/king.png" alt="Atv 3 - 2" class="slide-atv3">
-                    </div>
-                    <button class="slider-arrow" onclick="mudarSlide('atv3', 1)"><i class="fas fa-chevron-right"></i></button>
-                </div>
-            </div>
-            <div class="project-info">
-                <div class="info-block">
-                    <h3 class="blue-title">Sobre o projeto</h3>
-                    <p>Simulador de catálogo de cinema com navegação completa, permitindo selecionar filmes e ver detalhes em uma nova tela.</p>
-                </div>
-                <div class="info-grid">
-                    <div class="info-block">
-                        <h3 class="blue-title">Conceitos</h3>
-                        <ul class="check-list">
-                            <li>Navegação entre telas;</li>
-                            <li>Passagem de parâmetros;</li>
-                            <li>Componentização.</li>
-                        </ul>
-                    </div>
-                    <div class="info-block">
-                        <h3 class="blue-title">Tecnologias</h3>
-                        <ul class="dot-list">
-                            <li>Expo React Native;</li>
-                            <li>React Navigation;</li>
-                            <li>Stack Navigator.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </section>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="logo"><span class="lb">&lt;</span>VC<span class="lb">/&gt;</span></div>
+            <p class="footer-text">Vitor da Costa Chaves · Desenvolvedor Mobile · 2026</p>
+            <a href="https://github.com/Golden-Sirvices" target="_blank" class="footer-gh"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+    </footer>
+
+    <!-- MODAL PRINCIPAL -->
+    <div class="modal-overlay" id="modal-overlay" onclick="closeModal()">
+        <div class="modal" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+            <div class="modal-header">
+                <div class="modal-icon" id="m-icon"></div>
+                <div><div class="modal-eyebrow" id="m-eyebrow"></div><h2 class="modal-title" id="m-title"></h2></div>
+            </div>
+            <p class="modal-desc" id="m-desc"></p>
+            <div class="modal-cols">
+                <div><h4 class="modal-sub">Conceitos</h4><ul class="mlist check" id="m-concepts"></ul></div>
+                <div><h4 class="modal-sub">Tecnologias</h4><ul class="mlist dot" id="m-techs"></ul></div>
+            </div>
+            <!-- SIMULADOR DO APP -->
+            <div class="sim-area">
+                <h4 class="modal-sub" style="margin-bottom:12px">Simulador interativo</h4>
+                <div class="phone-frame">
+                    <div class="phone-notch"></div>
+                    <div class="phone-screen" id="phone-screen"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
