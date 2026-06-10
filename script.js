@@ -102,19 +102,20 @@ const SIMULATORS = {
   apresentacao: () => `
     <div class="sim-apre">
       <p class="s-name">Vitor Chaves</p>
-      <div class="s-avatar">👤</div>
+      <div class="s-avatar"><i class="fas fa-user" style="font-size:32px;color:rgba(255,255,255,.7)"></i></div>
       <div class="s-cards">
         <div class="s-card">
           <div class="s-card-title">Soft Skills</div>
-          <p class="s-skill">✨ Comunicação</p>
-          <p class="s-skill">🤝 Trabalho em Equipe</p>
-          <p class="s-skill">🌱 Empatia</p>
+          <p class="s-skill"><i class="fas fa-comments"></i> Comunicação</p>
+          <p class="s-skill"><i class="fas fa-users"></i> Trabalho em Equipe</p>
+          <p class="s-skill"><i class="fas fa-heart"></i> Empatia</p>
         </div>
         <div class="s-card">
           <div class="s-card-title">Hard Skills</div>
-          <p class="s-skill">💻 Programação</p>
-          <p class="s-skill">📊 Gestão</p>
-          <p class="s-skill">📱 Mobile Dev</p>
+          <p class="s-skill"><i class="fas fa-code"></i> Programação</p>
+          <p class="s-skill"><i class="fas fa-database"></i> Banco de Dados</p>
+          <p class="s-skill"><i class="fas fa-server"></i> Back-end</p>
+          <p class="s-skill"><i class="fas fa-desktop"></i> Front-end</p>
         </div>
       </div>
       <p class="s-footer">Apresentação 2026</p>
@@ -175,21 +176,21 @@ const SIMULATORS = {
           <div class="op-menu">
             <div class="op-item" onclick="opNavigate('agentes')">
               <div class="op-item-left">
-                <span class="op-item-icon">👥</span>
+                <span class="op-item-icon"><i class="fas fa-users"></i></span>
                 <div><div class="op-item-title">Classes de Agentes</div><div class="op-item-sub">Combatente, Especialista e Ocultista</div></div>
               </div>
               <span class="op-chevron">›</span>
             </div>
             <div class="op-item" onclick="opNavigate('atributos')">
               <div class="op-item-left">
-                <span class="op-item-icon">📊</span>
+                <span class="op-item-icon"><i class="fas fa-chart-bar"></i></span>
                 <div><div class="op-item-title">Sistema de Atributos</div><div class="op-item-sub">Força, Agilidade, Intelecto...</div></div>
               </div>
               <span class="op-chevron">›</span>
             </div>
             <div class="op-item" onclick="opNavigate('sobre')">
               <div class="op-item-left">
-                <span class="op-item-icon">ℹ️</span>
+                <span class="op-item-icon"><i class="fas fa-circle-info"></i></span>
                 <div><div class="op-item-title">Sobre a Ordo Realitas</div><div class="op-item-sub">História e a Membrana</div></div>
               </div>
               <span class="op-chevron">›</span>
@@ -198,10 +199,10 @@ const SIMULATORS = {
         </div>
       </div>
       <div class="op-tabbar">
-        <div class="op-tab"><span class="op-tab-icon active">🛡️</span><span class="op-tab-label active">Início</span></div>
-        <div class="op-tab" onclick="opTab('elementos')"><span class="op-tab-icon">🔮</span><span class="op-tab-label">Elementos</span></div>
-        <div class="op-tab" onclick="opTab('rituais')"><span class="op-tab-icon">📖</span><span class="op-tab-label">Grimório</span></div>
-        <div class="op-tab" onclick="opTab('ameacas')"><span class="op-tab-icon">💀</span><span class="op-tab-label">Ameaças</span></div>
+        <div class="op-tab"><span class="op-tab-icon active"><i class="fas fa-shield-halved"></i></span><span class="op-tab-label active">Início</span></div>
+        <div class="op-tab" onclick="opTab('elementos')"><span class="op-tab-icon"><i class="fas fa-wand-sparkles"></i></span><span class="op-tab-label">Elementos</span></div>
+        <div class="op-tab" onclick="opTab('rituais')"><span class="op-tab-icon"><i class="fas fa-book-skull"></i></span><span class="op-tab-label">Grimório</span></div>
+        <div class="op-tab" onclick="opTab('ameacas')"><span class="op-tab-icon"><i class="fas fa-skull"></i></span><span class="op-tab-label">Ameaças</span></div>
       </div>
     </div>`
 };
@@ -212,11 +213,11 @@ function rpgCardVertical() {
     <div style="display:flex;flex-direction:column;align-items:center;gap:8px">
       <div class="rpg-avatar">🧙</div>
       <div style="width:100%">
-        <div class="stat-label">❤️ HP 120/150</div>
+        <div class="stat-label"><i class="fas fa-heart" style="color:#e63946"></i> HP 120/150</div>
         <div class="stat-bar"><div class="stat-fill" style="width:80%;background:#e63946"></div></div>
-        <div class="stat-label">⚡ MP 60/85</div>
+        <div class="stat-label"><i class="fas fa-bolt" style="color:#22c55e"></i> MP 60/85</div>
         <div class="stat-bar"><div class="stat-fill" style="width:70%;background:#457b9d"></div></div>
-        <div class="attr-row"><span class="attr">⚔️ Atk: 20</span><span class="attr">🛡️ Def: 15</span></div>
+        <div class="attr-row"><span class="attr"><i class="fas fa-sword" style="color:#f5e6c8"></i> Atk: 20</span><span class="attr"><i class="fas fa-shield-halved" style="color:#f5e6c8"></i> Def: 15</span></div>
       </div>
     </div>
     <div class="rpg-btns">
@@ -231,11 +232,11 @@ function rpgCardHorizontal() {
     <div style="display:flex;flex-direction:row;align-items:center;gap:10px">
       <div class="rpg-avatar" style="flex-shrink:0">🧙</div>
       <div style="flex:1">
-        <div class="stat-label">❤️ HP 120/150</div>
+        <div class="stat-label"><i class="fas fa-heart" style="color:#e63946"></i> HP 120/150</div>
         <div class="stat-bar"><div class="stat-fill" style="width:80%;background:#e63946"></div></div>
-        <div class="stat-label">⚡ MP 60/85</div>
+        <div class="stat-label"><i class="fas fa-bolt" style="color:#22c55e"></i> MP 60/85</div>
         <div class="stat-bar"><div class="stat-fill" style="width:70%;background:#457b9d"></div></div>
-        <div class="attr-row"><span class="attr">⚔️ 20</span><span class="attr">🛡️ 15</span></div>
+        <div class="attr-row"><span class="attr"><i class="fas fa-khanda"></i> 20</span><span class="attr"><i class="fas fa-shield-halved"></i> 15</span></div>
       </div>
     </div>
     <div class="rpg-btns" style="margin-top:8px">
@@ -252,12 +253,12 @@ window.rpgMode = function(mode, btn) {
 };
 
 const FILMES_DATA = [
-  { titulo:'Duna: Parte 2', emoji:'🏜️', sinopse:'Paul Atreides se une a Chani e aos Fremen em uma guerra de vingança contra os conspiradores que destruíram sua família.' },
-  { titulo:'Kung Fu Panda 4', emoji:'🐼', sinopse:'Po é escolhido para se tornar o Líder Espiritual do Vale da Paz e precisa encontrar e treinar um novo Dragão Guerreiro.' },
-  { titulo:'Godzilla e Kong', emoji:'🦕', sinopse:'O novo império coloca o colossal Kong e o temível Godzilla contra uma ameaça colossal desconhecida.' },
-  { titulo:'Pobres Criaturas', emoji:'🧪', sinopse:'A incrível história e evolução de Bella Baxter, trazida de volta à vida pelo brilhante cientista Dr. Godwin Baxter.' },
-  { titulo:'O Menino e a Garça', emoji:'🦢', sinopse:'Um jovem rapaz chamado Mahito aventura-se num mundo partilhado entre vivos e mortos.' },
-  { titulo:'Bob Marley: One Love', emoji:'🎵', sinopse:'Um olhar sobre a vida e a música de Bob Marley, que inspirou gerações com sua mensagem de amor e unidade.' },
+  { titulo:'Duna: Parte 2', emoji:'<i class="fas fa-sun"></i>', sinopse:'Paul Atreides se une a Chani e aos Fremen em uma guerra de vingança contra os conspiradores que destruíram sua família.' },
+  { titulo:'Kung Fu Panda 4', emoji:'<i class="fas fa-paw"></i>', sinopse:'Po é escolhido para se tornar o Líder Espiritual do Vale da Paz e precisa encontrar e treinar um novo Dragão Guerreiro.' },
+  { titulo:'Godzilla e Kong', emoji:'<i class="fas fa-dragon"></i>', sinopse:'O novo império coloca o colossal Kong e o temível Godzilla contra uma ameaça colossal desconhecida.' },
+  { titulo:'Pobres Criaturas', emoji:'<i class="fas fa-flask"></i>', sinopse:'A incrível história e evolução de Bella Baxter, trazida de volta à vida pelo brilhante cientista Dr. Godwin Baxter.' },
+  { titulo:'O Menino e a Garça', emoji:'<i class="fas fa-feather"></i>', sinopse:'Um jovem rapaz chamado Mahito aventura-se num mundo partilhado entre vivos e mortos.' },
+  { titulo:'Bob Marley: One Love', emoji:'<i class="fas fa-music"></i>', sinopse:'Um olhar sobre a vida e a música de Bob Marley, que inspirou gerações com sua mensagem de amor e unidade.' },
 ];
 
 window.showFilmeDetail = function(idx) {
@@ -269,7 +270,7 @@ window.showFilmeDetail = function(idx) {
   detail.style.display = 'block';
   detail.innerHTML = `
     <span class="f-back" onclick="backFilmes()">← Voltar ao Menu</span>
-    <div class="f-poster" style="font-size:48px;background:#1a1a1a;border-radius:8px;display:flex;align-items:center;justify-content:center;height:110px;margin-bottom:10px">${f.emoji}</div>
+    <div class="f-poster" style="font-size:40px;color:#e50914;background:#1a1a1a;border-radius:8px;display:flex;align-items:center;justify-content:center;height:110px;margin-bottom:10px">${f.emoji}</div>
     <div class="f-detail-title">${f.titulo}</div>
     <div class="f-sinopse-label">Sinopse:</div>
     <div class="f-sinopse">${f.sinopse}</div>
@@ -318,7 +319,6 @@ window.storeFilter = function(el) {
   if (list) list.innerHTML = storeItems(el.textContent.trim());
 };
 
-// --- ORDEM PARANORMAL ---
 const OP_SCREENS = {
   agentes: `
     <div class="op-inner">
@@ -448,9 +448,6 @@ window.opTab = function(screen) {
   document.querySelector('.sim-ordem').insertBefore(div, document.querySelector('.op-tabbar'));
 };
 
-/* ============================================================
-   MODAL
-   ============================================================ */
 window.openModal = function(idx) {
   const p = PROJECTS[idx];
   document.getElementById('m-icon').innerHTML = p.icon;
@@ -473,9 +470,6 @@ window.closeModal = function() {
 
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
-/* ============================================================
-   TABS
-   ============================================================ */
 document.querySelectorAll('.tab').forEach(tab => {
   tab.addEventListener('click', () => {
     document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
@@ -486,10 +480,7 @@ document.querySelectorAll('.tab').forEach(tab => {
   });
 });
 
-/* ============================================================
-   TYPEWRITER
-   ============================================================ */
-const TEXTS = ['Desenvolvedor Mobile','React Native & Expo','Aluno 2026 · sempre aprendendo'];
+const TEXTS = ['Desenvolvedor','React Native & Expo','Aluno 2026 · sempre aprendendo'];
 let tIdx=0, cIdx=0, del=false;
 const twEl = document.getElementById('typewriter');
 function type() {
@@ -502,9 +493,6 @@ function type() {
 }
 setTimeout(type, 800);
 
-/* ============================================================
-   SCROLL REVEAL
-   ============================================================ */
 const io = new IntersectionObserver(entries => {
   entries.forEach(e => {
     if (e.isIntersecting) {
@@ -520,9 +508,6 @@ function revealItems() {
   }, 50);
 }
 
-/* ============================================================
-   INIT
-   ============================================================ */
 renderCards();
 renderTimeline();
 revealItems();
@@ -532,3 +517,63 @@ document.querySelectorAll('.stat').forEach(el => {
   el.style.transition = 'opacity .5s ease, transform .5s ease';
   io.observe(el);
 });
+
+window.enviarContato = async function() {
+    const nome  = document.getElementById('c-nome').value.trim();
+    const email = document.getElementById('c-email').value.trim();
+    const msg   = document.getElementById('c-msg').value.trim();
+    const btn   = document.getElementById('form-btn');
+    const fb    = document.getElementById('form-feedback');
+
+    // Validação client-side
+    if (!nome || nome.length < 2)            { showFb(fb,'erro','Por favor, insira seu nome.'); return; }
+    if (!email || !email.includes('@'))      { showFb(fb,'erro','Por favor, insira um e-mail válido.'); return; }
+    if (!msg  || msg.length < 10)            { showFb(fb,'erro','Mensagem muito curta. Escreva pelo menos 10 caracteres.'); return; }
+
+    btn.disabled = true;
+    btn.querySelector('#form-btn-text').innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
+    fb.style.display = 'none';
+
+    try {
+        const res = await fetch('contato.php', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ nome, email, msg })
+        });
+        const data = await res.json();
+        if (data.ok) {
+            showFb(fb,'ok', data.msg);
+            document.getElementById('c-nome').value  = '';
+            document.getElementById('c-email').value = '';
+            document.getElementById('c-msg').value   = '';
+        } else {
+            const errs = data.erros ? data.erros.join(' ') : data.erro;
+            showFb(fb,'erro', errs);
+        }
+    } catch(e) {
+        showFb(fb,'ok', 'Mensagem registrada! (Para envio real, hospede em um servidor PHP.)');
+    } finally {
+        btn.disabled = false;
+        btn.querySelector('#form-btn-text').innerHTML = 'Enviar mensagem <i class="fas fa-paper-plane"></i>';
+    }
+};
+
+function showFb(el, tipo, texto) {
+    el.className = 'form-feedback ' + tipo;
+    el.textContent = texto;
+    el.style.display = 'block';
+    el.scrollIntoView({ behavior:'smooth', block:'nearest' });
+}
+
+async function carregarVisitas() {
+    try {
+        const res  = await fetch('visitas.php');
+        const data = await res.json();
+        const elTotal = document.getElementById('visits-total');
+        const elHoje  = document.getElementById('visits-hoje');
+        if (elTotal) elTotal.textContent = data.total.toLocaleString('pt-BR');
+        if (elHoje)  elHoje.textContent  = data.hoje.toLocaleString('pt-BR');
+    } catch(e) {
+    }
+}
+carregarVisitas();

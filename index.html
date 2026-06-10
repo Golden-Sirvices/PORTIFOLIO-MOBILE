@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vitor Chaves — Dev Mobile</title>
+    <title>Vitor Chaves — Dev</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -18,15 +18,14 @@
             <li><a href="#home">início</a></li>
             <li><a href="#sobre">sobre</a></li>
             <li><a href="#projetos">projetos</a></li>
+            <li><a href="#contato">contato</a></li>
         </ul>
         <div class="nav-status"><span class="sdot"></span>disponível</div>
     </nav>
-
-    <!-- HERO -->
     <section id="home" class="hero">
         <div class="hero-grid"></div>
         <div class="hero-content">
-            <div class="hero-tag">// desenvolvedor mobile</div>
+            <div class="hero-tag">// desenvolvedor </div>
             <h1 class="hero-name">Vitor<br><span>Chaves</span></h1>
             <p class="hero-sub" id="typewriter"></p>
             <div class="hero-cta">
@@ -36,7 +35,7 @@
         </div>
         <div class="hero-visual">
             <div class="photo-frame">
-                <img src="imagens/eu.png" alt="Vitor Chaves">
+                <img src="imagens/eu.jpeg" alt="Vitor Chaves">
                 <div class="photo-ring"></div>
             </div>
         </div>
@@ -49,8 +48,8 @@
             <div class="sobre-left">
                 <div class="eyebrow">01 — sobre mim</div>
                 <h2 class="sec-title">Construindo<br>experiências <em>mobile</em></h2>
-                <p class="bio">Sou estudante de Desenvolvimento de Sistemas (turma 2026), apaixonado por criar interfaces mobile que combinam funcionalidade e estética. Meu foco está em React Native, mas adoro entender como as coisas funcionam do front ao back.</p>
-                <p class="bio">Cada projeto é uma oportunidade de aplicar conceitos novos e empurrar um pouco mais os limites do que consigo construir.</p>
+                <p class="bio">Sou estudante de Desenvolvimento de Sistemas (turma 2026), apaixonado por criar soluções completas — do banco de dados ao front-end. Tenho experiência com HTML, CSS, JavaScript, React Native no front, PHP no back-end e MySQL para persistência de dados.</p>
+                <p class="bio">Cada projeto é uma oportunidade de conectar essas camadas e construir algo que realmente funciona. Sempre aprendendo, sempre evoluindo.</p>
                 <div class="sobre-links">
                     <a href="https://github.com/Golden-Sirvices" target="_blank" class="social-pill"><i class="fab fa-github"></i> Golden-Sirvices</a>
                 </div>
@@ -65,20 +64,18 @@
                     </div>
                     <div class="code-body">
 <pre class="scode"><span class="sb">{</span>
-  <span class="sk">"mobile"</span>: <span class="sb">[</span>
-    <span class="ss">"React Native"</span>, <span class="ss">"Expo"</span>,
-    <span class="ss">"React Navigation"</span>,
-    <span class="ss">"React Native Paper"</span>
-  <span class="sb">]</span>,
-  <span class="sk">"web"</span>: <span class="sb">[</span>
+  <span class="sk">"frontend"</span>: <span class="sb">[</span>
     <span class="ss">"HTML5"</span>, <span class="ss">"CSS3"</span>,
-    <span class="ss">"JavaScript"</span>
+    <span class="ss">"JavaScript"</span>, <span class="ss">"React Native"</span>
   <span class="sb">]</span>,
-  <span class="sk">"conceitos"</span>: <span class="sb">[</span>
-    <span class="ss">"Mobile First"</span>,
-    <span class="ss">"UX/UI Design"</span>,
-    <span class="ss">"Componentização"</span>,
-    <span class="ss">"Stack & Tab Navigator"</span>
+  <span class="sk">"backend"</span>: <span class="sb">[</span>
+    <span class="ss">"PHP"</span>, <span class="ss">"Node.js (básico)"</span>
+  <span class="sb">]</span>,
+  <span class="sk">"banco_de_dados"</span>: <span class="sb">[</span>
+    <span class="ss">"MySQL"</span>, <span class="ss">"SQLite"</span>
+  <span class="sb">]</span>,
+  <span class="sk">"mobile"</span>: <span class="sb">[</span>
+    <span class="ss">"Expo"</span>, <span class="ss">"React Navigation"</span>
   <span class="sb">]</span>,
   <span class="sk">"status"</span>: <span class="ss">"aprendendo sempre"</span>
 <span class="sb">}</span></pre>
@@ -116,10 +113,80 @@
         </div>
     </section>
 
+
+    <!-- CONTATO -->
+    <section id="contato" class="contato">
+        <div class="contato-inner">
+            <div class="eyebrow">03 — contato</div>
+            <h2 class="sec-title">Vamos <em>conversar</em></h2>
+            <p class="contato-sub">Tem um projeto, uma dúvida ou só quer trocar uma ideia? Me manda uma mensagem.</p>
+
+            <div class="contato-grid">
+                <!-- FORMULÁRIO -->
+                <div class="form-card">
+                    <div id="form-feedback" class="form-feedback" style="display:none"></div>
+                    <div class="form-group">
+                        <label class="form-label">Nome</label>
+                        <input class="form-input" id="c-nome" type="text" placeholder="Seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">E-mail</label>
+                        <input class="form-input" id="c-email" type="email" placeholder="seu@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Mensagem</label>
+                        <textarea class="form-input form-textarea" id="c-msg" placeholder="Sua mensagem..."></textarea>
+                    </div>
+                    <button class="form-btn" id="form-btn" onclick="enviarContato()">
+                        <span id="form-btn-text">Enviar mensagem <i class="fas fa-paper-plane"></i></span>
+                    </button>
+                </div>
+
+                <!-- INFOS LATERAIS -->
+                <div class="contato-info">
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fab fa-github"></i></div>
+                        <div>
+                            <div class="info-label">GitHub</div>
+                            <a href="https://github.com/Golden-Sirvices" target="_blank" class="info-value">Golden-Sirvices</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <div class="info-label">E-mail</div>
+                            <span class="info-value">vitordacostagoldem@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <div class="info-label">Localização</div>
+                            <span class="info-value">Brasil</span>
+                        </div>
+                    </div>
+                    <!-- CONTADOR DE VISITAS -->
+                    <div class="visits-card">
+                        <div class="visits-row">
+                            <div class="visits-item">
+                                <span class="visits-num" id="visits-total">—</span>
+                                <span class="visits-label">visitas totais</span>
+                            </div>
+                            <div class="visits-divider"></div>
+                            <div class="visits-item">
+                                <span class="visits-num" id="visits-hoje">—</span>
+                                <span class="visits-label">hoje</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="footer">
         <div class="footer-inner">
             <div class="logo"><span class="lb">&lt;</span>VC<span class="lb">/&gt;</span></div>
-            <p class="footer-text">Vitor da Costa Chaves · Desenvolvedor Mobile · 2026</p>
+            <p class="footer-text">Vitor da Costa Chaves · Desenvolvedor · 2026</p>
             <a href="https://github.com/Golden-Sirvices" target="_blank" class="footer-gh"><i class="fab fa-github"></i> GitHub</a>
         </div>
     </footer>
@@ -137,7 +204,6 @@
                 <div><h4 class="modal-sub">Conceitos</h4><ul class="mlist check" id="m-concepts"></ul></div>
                 <div><h4 class="modal-sub">Tecnologias</h4><ul class="mlist dot" id="m-techs"></ul></div>
             </div>
-            <!-- SIMULADOR DO APP -->
             <div class="sim-area">
                 <h4 class="modal-sub" style="margin-bottom:12px">Simulador interativo</h4>
                 <div class="phone-frame">
